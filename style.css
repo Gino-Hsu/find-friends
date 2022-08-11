@@ -1,3 +1,9 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,9 +33,9 @@ nav.navbar {
 
 .carousel {
   max-width: 80%;
-  height: 350px;
+  max-height: 20vw;
   overflow: hidden;
-  margin:  auto;
+  margin: auto;
 }
 
 img.slide-img1 {
@@ -37,11 +43,11 @@ img.slide-img1 {
 }
 
 img.slide-img2 {
-  margin-top: -300px;
+  margin-top: -230px;
 }
 
 img.slide-img3 {
-  margin-top: -250px;
+  margin-top: -230px;
 }
 
 .forms {
@@ -78,7 +84,7 @@ a.page-link {
 }
 
 .page-item.active .page-link {
-  background-color: rgb(78, 75, 75) ;
+  background-color: rgb(78, 75, 75);
   border-color: rgb(137, 134, 134);
 }
 
@@ -108,4 +114,18 @@ a.page-link {
 #up-icons:hover {
   color: rgba(247, 103, 7, 0.884);
   transform: scale(1.2);
+}
+
+@media screen and (max-width: 900px) {
+  .slide-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+
+  img.slide-img2,
+  img.slide-img3 {
+    margin-top: -150px;
+  }
 }
